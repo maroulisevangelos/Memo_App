@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#064E95"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageViewContactEdit"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/baseline_add_a_photo_24" />
+
+    <EditText
+        android:id="@+id/editTextNameEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewContactEdit"
+        android:layout_marginTop="16dp"
+        android:hint="Name"
+        android:textSize="18sp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextRelationEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNameEdit"
+        android:layout_marginTop="8dp"
+        android:hint="Relation"
+        android:textSize="16sp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextNum1Edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextRelationEdit"
+        android:layout_marginTop="8dp"
+        android:hint="Num1"
+        android:textSize="16sp"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/editTextNum2Edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNum1Edit"
+        android:layout_marginTop="8dp"
+        android:hint="Num2"
+        android:textSize="16sp"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/buttonSaveChanges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNum2Edit"
+        android:layout_marginTop="16dp"
+        android:textColor="#064E95"
+        android:backgroundTint="@color/white"
+        android:text="Save Changes" />
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Memo"
+        tools:targetApi="31"
+        >
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAN2kXG8EU2RUmltwzOhHzGaqKjxbfJ3Lc" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Maps.Maps"></activity>
+        <activity android:name=".Maps.MapsAdd"></activity>
+        <activity android:name=".Maps.MapsRemove"></activity>
+        <activity android:name=".Maps.Destination"></activity>
+        <activity android:name=".Reminder.Reminder"></activity>
+        <activity android:name=".Reminder.ReminderAdd"></activity>
+        <activity android:name=".Reminder.ReminderOptions"></activity>
+        <activity android:name=".Reminder.ReminderList"></activity>
+        <activity android:name=".Gallery.MainPhoto"></activity>
+        <activity android:name=".Gallery.FullScreenImageActivity"></activity>
+        <activity android:name=".Calls.Contacts" />
+        <activity android:name=".Calls.ContactMain" />
+        <activity android:name=".Calls.ContactsSearch" />
+        <activity android:name=".Calls.ContactsAdd" />
+        <activity android:name=".Calls.ContactsEdit" />
+        <activity android:name=".Panic.MainPanic" />
+        <receiver android:name=".Reminder.ReminderBroadcastReceiver" android:exported="true"/>
+
+    </application>
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>

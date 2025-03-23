@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#064E95"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo_icon"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo"
+        android:elevation="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_voice"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="570dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/rounded_button_all_sides"
+        android:radius="500dp"
+        android:text="ΦΩΝΗΤΙΚΗ ΛΕΙΤΟΥΡΓΙΑ"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_panic"
+        android:layout_width="350dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="460dp"
+        android:background="@drawable/rounded_button"
+        android:radius="500dp"
+        android:text="       ΚΟΥΜΠΙ\n       ΠΑΝΙΚΟΥ"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/panic_icon"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="480dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/ic_panic_button"
+        android:elevation="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_reminders"
+        android:layout_width="350dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="350dp"
+        android:layout_marginRight="-5dp"
+        android:background="@drawable/rounded_button_reverse"
+        android:radius="500dp"
+        android:text="           ΥΠΕΝΘΥΜΙΣΕΙΣ"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/reminders_icon"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="365dp"
+        android:layout_marginLeft="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/ic_reminders"
+        android:elevation="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_map"
+        android:layout_width="350dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="240dp"
+        android:background="@drawable/rounded_button"
+        android:radius="500dp"
+        android:text="       ΧΑΡΤΗΣ"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/map_icon"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="265dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/ic_map"
+        android:elevation="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_photos"
+        android:layout_width="350dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="130dp"
+        android:layout_marginRight="-5dp"
+        android:background="@drawable/rounded_button_reverse"
+        android:radius="500dp"
+        android:text="            ΦΩΤΟΓΡΑΦΙΕΣ"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/photos_icon"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="150dp"
+        android:layout_marginLeft="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/ic_photos"
+        android:elevation="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_calls"
+        android:layout_width="350dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_button"
+        android:radius="500dp"
+        android:text="       ΚΛΗΣΕΙΣ"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/calls_icon"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/ic_calls"
+        android:elevation="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

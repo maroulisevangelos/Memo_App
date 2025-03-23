@@ -1,0 +1,43 @@
+[versions]
+agp = "8.4.1"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+material = "1.12.0"
+activity = "1.9.0"
+constraintlayout = "2.1.4"
+maps = "18.0.0"
+playServicesLocation = "18.0.0"
+maps1 = "0.18.0"
+maps2 = "2.2.0"
+maps3 = "2.8.8"
+maps4 = "4.9.1"
+notifi = "1.7.0"
+
+
+[libraries]
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "maps" }
+play-services-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "playServicesLocation" }
+google-maps-services = { group = "com.google.maps", name = "google-maps-services", version.ref = "maps1" }
+android-maps-utils = { group = "com.google.maps.android", name = "android-maps-utils", version.ref = "maps2" }
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "maps3" }
+squareup = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "maps4" }
+notif = {group = "androidx.core", name = "core", version.ref = "notifi"}
+
+
+
+
+
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+

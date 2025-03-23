@@ -1,0 +1,142 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Reminder.ReminderAdd">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#064E95"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Δημιουργία Υπενθύμισης"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:text="Πατήστε το κουμπί από κάτω για να διαλέξετε καθε πότε θα λαμβάνετε ειδοποίηση"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_marginBottom="16dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/option2"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:text="Κουμπί Συχνώτητας"
+            android:background="@drawable/rounded_button_all_sides"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView4" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Επιλέξτε Ώρα:"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:layout_marginBottom="16dp" />
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner"
+            android:theme="@style/CustomTimePicker"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:background="@color/black"
+            android:layout_marginBottom="10dp" />
+
+        <TimePicker
+            android:id="@+id/timePicker2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner"
+            android:theme="@style/CustomTimePicker"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@color/black"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_add_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Προσθήκη δεύτερης ώρας"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_button_all_sides"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Όνομα Υπενθύμισης"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:layout_marginTop="0dp"
+            android:textAlignment="center"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:background="@drawable/rounded_button_all_sides"
+            android:layout_marginBottom="15dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Αποθήκευση"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_button_all_sides"
+            android:layout_marginBottom="8dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ακύρωση"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_button_all_sides" />
+
+    </LinearLayout>
+</ScrollView>
+
+
