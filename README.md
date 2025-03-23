@@ -84,28 +84,28 @@ Development Phases:
   
 Evaluation Insights:
   
-  Users appreciated the large, clear fonts and intuitive layout.
-  
-  Voice commands significantly improved usability and efficiency.
-  
-  Recommendations included providing full-screen navigation maps and enhancing reminder setup clarity.
-  
-  The interface received high scores for accessibility, usefulness, and overall user satisfaction.
+    Users appreciated the large, clear fonts and intuitive layout.
+    
+    Voice commands significantly improved usability and efficiency.
+    
+    Recommendations included providing full-screen navigation maps and enhancing reminder setup clarity.
+    
+    The interface received high scores for accessibility, usefulness, and overall user satisfaction.
 
   
 Technical Details:
   
-  Platform: Android Studio (final prototype compatible with real devices or emulators).
-  
-  Languages and Tools: Java, XML, GPS integration, Voice Commands, Android APIs.
+    Platform: Android Studio (final prototype compatible with real devices or emulators).
+    
+    Languages and Tools: Java, XML, GPS integration, Voice Commands, Android APIs.
 
   
 How to Run:
   
-  Clone the repository to your local machine.
-  
-  Open the project in Android Studio.
-  
-  Run the app on a compatible Android device or emulator.
+    Clone the repository to your local machine.
+    
+    Open the project in Android Studio.
+    
+    Run the app on a compatible Android device or emulator.
 
 Note: This interface is designed for educational purposes, focusing on accessibility and usability for elderly users with memory impairments.
