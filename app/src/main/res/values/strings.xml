@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Memo</string>
-    <string name="google_maps_api_key">AIzaSyAN2kXG8EU2RUmltwzOhHzGaqKjxbfJ3Lc</string>
+    <string name="google_maps_api_key">"API_KEY"</string>
 
 </resources>
